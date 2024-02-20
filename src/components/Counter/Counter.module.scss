@@ -1,0 +1,39 @@
+.counter{
+  width: 30%;
+  min-height: 700px;
+  outline: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+
+  &__result{
+    height: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10 px;
+    font-size: 16px;
+    overflow: scroll;
+  }
+
+  &__button{
+    height: 20px;
+    background-color: green;
+    border: none;
+    color: white;
+    transition: 0.5s;
+  }
+  &__button:hover{
+    background-color: rgb(21, 81, 21);
+  }
+
+
+}  
+@media(max-width:600px){
+
+  .counter{
+    &__result{ font-size: 12px;}
+    
+  }
+}
